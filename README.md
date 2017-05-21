@@ -106,3 +106,7 @@ This project uses the fantastic work done by [Andrew Kelly](https://twitter.com/
 
 ![Today's View](https://i.imgur.com/FMVsxUy.jpg=600x)
 I thought I'd start a habit and take a snapshot of where I was when I made this thing! Today, it's a sunny Sunday morning in London and I'm in my flat.
+
+## TODO
+
+Add tests! Hey, don't look at me like that, I love testing.

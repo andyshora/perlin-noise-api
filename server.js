@@ -80,7 +80,7 @@ server.connection({
 server.route({
   method: 'GET',
   path: '/',
-  handler: (request, reply) => reply('Try sending a request to /noise')
+  handler: (request, reply) => reply('Try sending a request to /noise/10/1')
 });
 
 server.route({
@@ -121,5 +121,4 @@ server.start(err => {
   if (err) {
     throw err;
   }
-  console.log('Server running at:', server.info.uri);
 });

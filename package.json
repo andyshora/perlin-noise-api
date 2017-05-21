@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "eslint": "eslint server.js",
-    "test": "npm test",
     "start": "node server.js"
   },
   "repository": {

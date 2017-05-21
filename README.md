@@ -12,7 +12,7 @@ An API for generating Perlin Noise, by [@andyshora](https://twitter.com/andyshor
 
 ## Live API - Give it a spin!
 
-This service is running live at [noise.shora.net](http://noise.shora.net). Feel free to use this with your projects. If I experience any large volume of requests or abuse I'll have to take it down, so please be gentle.
+This service is running live at [noise.shora.net](http://noise.shora.net/noise/1000/1). Feel free to use this with your projects. If I experience any large volume of requests or abuse I'll have to take it down, so please be gentle.
 
 ## Example requests
 
@@ -21,25 +21,39 @@ A simple array of noise, 1000 elements long:
 /noise/1000/1
 ```
 
+[Try the request live](http://noise.shora.net/noise/1000/1)
+
 Example Response:
 ```
 [0.9661401717214197,0.8617638013335318,0.7658141846311228,0.6754176614781082,0.588071107802635,...];
 ```
 
-The same amound of noise, with some options tweaked:
-```
-/noise/1000/1?octaveCount=7&amplitude=0.5&persistence=0.5
-```
+---
 
 This will request elements to form multi-dimensional array of noise, suitable for generating a 2D texture, 4000px x 6000px:
 ```
 /noise/4000/6000
 ```
 
+[Try the request live](http://noise.shora.net/noise/4000/6000)
+
+---
+
+Some options tweaked:
+```
+/noise/1000/1?octaveCount=7&amplitude=0.5&persistence=0.5
+```
+
+[Try the request live](http://noise.shora.net/noise/1000/1?octaveCount=7&amplitude=0.5&persistence=0.5)
+
+---
+
 JSONP callback, specifying the function you want to call on your page:
 ```
 /noise/5/1?jsonp=my_javascript_callback
 ```
+
+[Try the request live](http://noise.shora.net/noise/5/1?jsonp=my_javascript_callback)
 
 Example Response:
 ```

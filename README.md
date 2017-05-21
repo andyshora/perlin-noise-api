@@ -8,7 +8,7 @@ An API for generating Perlin Noise, by [@andyshora](https://twitter.com/andyshor
 1. Clone this repo: `git clone https://github.com/andyshora/perlin-noise-api.git`
 2. Install dependencies: `npm i`
 3. Start API: `npm start`
-4. Open your browser to (http://localhost:3000/noise/100/1)[http://localhost:3000/noise/100/1]
+4. Open your browser to [http://localhost:3000/noise/100/1](http://localhost:3000/noise/100/1)
 
 ## Live API - Give it a spin!
 
@@ -48,7 +48,7 @@ Some options tweaked:
 
 ---
 
-JSONP callback, specifying the function you want to call on your page:
+The **ALL IMPORTANT JSONP callback**, specifying the function you want to call on your page. If you're working purely client-side, you'll probably want to use this.
 ```
 /noise/5/1?jsonp=my_javascript_callback
 ```

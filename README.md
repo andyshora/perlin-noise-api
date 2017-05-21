@@ -1,23 +1,25 @@
 ![Perlin Noise](https://i.imgur.com/5xNS0uS.jpg)
 
 # Perlin Noise API
-An API for generating Perlin Noise, by (@andyshora)[https://twitter.com/andyshora].
+An API for generating Perlin Noise, by [@andyshora](https://twitter.com/andyshora).
 
 ## Running Locally
 
 1. Clone this repo: `git clone https://github.com/andyshora/perlin-noise-api.git`
 2. Install dependencies: `npm i`
 3. Start API: `npm start`
-4. Open your browser to [http://localhost:3000/noise/100/1]
+4. Open your browser to (http://localhost:3000/noise/100/1)[http://localhost:3000/noise/100/1]
 
 ## Live Service
 
-This service is running live at [noise.shora.net]. Feel free to use this with your projects. If I experience any large volume of requests or abuse I'll have to take it down, so please be gentle.
+This service is running live at [noise.shora.net](http://noise.shora.net). Feel free to use this with your projects. If I experience any large volume of requests or abuse I'll have to take it down, so please be gentle.
 
 ## Example requests:
 
 A simple array of noise, 1000 elements long:
-`/noise/1000/1`
+```
+/noise/1000/1
+```
 
 Example Response:
 ```
@@ -25,13 +27,19 @@ Example Response:
 ```
 
 The same amound of noise, with some options tweaked:
-`/noise/1000/1?octaveCount=7&amplitude=0.5&persistence=0.5`
+```
+/noise/1000/1?octaveCount=7&amplitude=0.5&persistence=0.5
+```
 
 This will request elements to form multi-dimensional array of noise, suitable for generating a 2D texture, 4000px x 6000px:
-`/noise/4000/6000`
+```
+/noise/4000/6000
+```
 
 JSONP callback, specifying the function you want to call on your page:
-`/noise/5/1?jsonp=my_javascript_callback`
+```
+/noise/5/1?jsonp=my_javascript_callback
+```
 
 Example Response:
 ```
@@ -49,7 +57,7 @@ This means: index = y * width + height
 
 ## Options Documentation
 
-A few notes from my own learnings on Perlin Noise options. [Here's a great article](http://libnoise.sourceforge.net/glossary/), they're difficult to find.
+A few notes from my own learnings on Perlin Noise options. [Here's a great article](http://libnoise.sourceforge.net/glossary/); they're difficult to find.
 
 > Note: the examples show noise being generated from -1 to 1, but this API generates noise values from 0 to 1.
 
@@ -61,15 +69,15 @@ The number of noise functions is defined by the Octaves value. A higher value le
 
 ![Octave Count = 8](http://libnoise.sourceforge.net/glossary/images/octave8.png)
 
-Think blurry image vs detailed image.
+Think blurry image vs detailed image. How many spikes do you want to see?
 
 
 ### Amplitude
-The maximum absolute value that a specific coherent-noise function can output.
+The maximum absolute value that a specific coherent-noise function can output. Think biggest change per iteration.
 > Defaults to 0.1
 
 ### Persistence
-A multiplier that determines how quickly the amplitudes diminish for each successive octave in a Perlin-noise function.
+A multiplier that determines how quickly the amplitudes diminish for each successive octave in a Perlin-noise function. How scary do you want your rollercoaster?
 > Defaults to 0.2
 
 ![Persistence = 0.75](http://libnoise.sourceforge.net/glossary/images/persistence34.png)

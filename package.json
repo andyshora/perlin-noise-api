@@ -1,0 +1,41 @@
+{
+  "name": "perlin-noise-api",
+  "version": "1.0.0",
+  "description": "An API for generating Perlin Noise",
+  "main": "server.js",
+  "scripts": {
+    "eslint": "eslint server.js api/*.js",
+    "test": "npm test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyshora/perlin-noise-api.git"
+  },
+  "keywords": [
+    "perlin",
+    "noise",
+    "texture",
+    "random",
+    "node",
+    "dataviz"
+  ],
+  "author": "Andy Shora <andyshora@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andyshora/perlin-noise-api/issues"
+  },
+  "homepage": "https://github.com/andyshora/perlin-noise-api#readme",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "perlin-noise": "0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-require-jsdoc": "^1.0.4"
+  }
+}

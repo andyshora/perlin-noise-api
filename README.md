@@ -32,12 +32,12 @@ Example Response:
 
 ---
 
-This will request elements to form multi-dimensional array of noise, suitable for generating a 2D texture, 4000px x 6000px:
+This will request elements to form multi-dimensional array of noise, suitable for generating a 2D texture, 400px x 1000px:
 ```
-/noise/4000/6000
+/noise/400/1000
 ```
 
-[Try the request live](http://noise.shora.net/noise/4000/6000)
+[Try the request live](http://noise.shora.net/noise/400/1000)
 
 ---
 

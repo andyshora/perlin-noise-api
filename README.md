@@ -10,11 +10,11 @@ An API for generating Perlin Noise, by [@andyshora](https://twitter.com/andyshor
 3. Start API: `npm start`
 4. Open your browser to (http://localhost:3000/noise/100/1)[http://localhost:3000/noise/100/1]
 
-## Live Service
+## Live API - Give it a spin!
 
 This service is running live at [noise.shora.net](http://noise.shora.net). Feel free to use this with your projects. If I experience any large volume of requests or abuse I'll have to take it down, so please be gentle.
 
-## Example requests:
+## Example requests
 
 A simple array of noise, 1000 elements long:
 ```
@@ -87,3 +87,8 @@ A multiplier that determines how quickly the amplitudes diminish for each succes
 ## Credits
 
 This project uses the fantastic work done by [Andrew Kelly](https://twitter.com/andy_kelley) which allows us to generate noise from an [npm package](https://www.npmjs.com/package/perlin-noise).
+
+## Today's View
+
+![Today's View](https://i.imgur.com/FMVsxUy.jpg=600x)
+I thought I'd start a habit and take a snapshot of where I was when I made this thing! Today, it's a sunny Sunday morning in London and I'm in my flat.

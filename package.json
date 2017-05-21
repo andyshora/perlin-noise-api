@@ -4,7 +4,7 @@
   "description": "An API for generating Perlin Noise",
   "main": "server.js",
   "scripts": {
-    "eslint": "eslint server.js api/*.js",
+    "eslint": "eslint server.js",
     "test": "npm test",
     "start": "node server.js"
   },

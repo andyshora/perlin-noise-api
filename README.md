@@ -3,6 +3,8 @@
 # Perlin Noise API
 An API for generating Perlin Noise, by [@andyshora](https://twitter.com/andyshora).
 
+[![Build Status](https://travis-ci.org/andyshora/perlin-noise-api.svg?branch=master)](https://travis-ci.org/andyshora/perlin-noise-api)
+
 ## Running Locally
 
 1. Clone this repo: `git clone https://github.com/andyshora/perlin-noise-api.git`

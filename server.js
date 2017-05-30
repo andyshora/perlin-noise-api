@@ -74,7 +74,7 @@ const validateParams = params => {
 
 server.connection({
   host: '0.0.0.0',
-  port: process.env.PORT || 3000
+  port: process.env.PORT || 3500
 });
 
 server.route({
@@ -86,6 +86,9 @@ server.route({
 server.route({
   method: 'GET',
   path: '/noise/{width}/{height}',
+  config: {
+    cors: true
+  },
   handler: (request, reply) => {
     // merge params and querystring
     const params = Object.assign(request.params, request.query);
@@ -108,7 +111,7 @@ server.route({
       const noise = perlin.generatePerlinNoise(params.width, params.height, options);
 
       if (params.jsonp) {
-        reply(`${params.jsonp}(${noise});`);
+        reply(`${params.jsonp}([${noise}]);`);
       } else {
         reply(noise);
       }

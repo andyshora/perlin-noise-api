@@ -10,7 +10,7 @@ An API for generating Perlin Noise, by [@andyshora](https://twitter.com/andyshor
 1. Clone this repo: `git clone https://github.com/andyshora/perlin-noise-api.git`
 2. Install dependencies: `npm i`
 3. Start API: `npm start`
-4. Open your browser to [http://localhost:3000/noise/100/1](http://localhost:3000/noise/100/1)
+4. Open your browser to [http://localhost:3500/noise/100/1](http://localhost:3500/noise/100/1)
 
 ## Live API - Give it a spin!
 
@@ -27,7 +27,7 @@ A simple array of noise, 1000 elements long:
 
 Example Response:
 ```
-[0.9661401717214197,0.8617638013335318,0.7658141846311228,0.6754176614781082,0.588071107802635,...];
+[0.9661401717214197,0.8617638013335318,0.7658141846311228,0.6754176614781082,0.588071107802635,...]
 ```
 
 ---
@@ -52,19 +52,19 @@ Some options tweaked:
 
 The **ALL IMPORTANT JSONP callback**, specifying the function you want to call on your page. If you're working purely client-side, you'll probably want to use this.
 ```
-/noise/5/1?jsonp=my_javascript_callback
+/noise/500/500?jsonp=my_javascript_callback
 ```
 
 [Try the request live](http://noise.shora.net/noise/5/1?jsonp=my_javascript_callback)
 
 Example Response:
 ```
-my_javascript_callback(0.9661401717214197,0.8617638013335318,0.7658141846311228,0.6754176614781082,0.588071107802635);
+my_javascript_callback(0.9661401717214197,0.8617638013335318,0.7658141846311228,0.6754176614781082,0.588071107802635,...);
 ```
 
 ## Response Format
 
-Please note that the response will contain **one-dimensional array** in row-major order, which you are then responsible for parsing into multiple arrays, if required. For example, the request above will be suitable for painting a 4000x6000 image one pixel at a time, row-by-row, from left-to-right.
+Please note that the response will contain **one-dimensional array** in row-major order, which you are then responsible for parsing into multiple arrays, if required. For example, the request above will be suitable for painting a 500x500 image one pixel at a time, row-by-row, from left-to-right.
 
 Each value in the array will be between 0 and 1.
 

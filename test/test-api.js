@@ -2,7 +2,7 @@ import test from 'ava';
 import request from 'supertest';
 import { checkArrayLength, checkFail, checkSuccess } from './helpers/general';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3500;
 const api = request(`http://0.0.0.0:${PORT}`);
 
 test('testing for failure on invalid height', async t => {
